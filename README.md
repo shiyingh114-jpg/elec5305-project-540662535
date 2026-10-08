@@ -6,44 +6,54 @@
 
 ## Project Overview
 
-This project investigates whether binaural spatial cues can improve speech separation in controlled two-source audio scenes. Clean target speech and an interfering signal will be spatialised using measured HRIRs to create binaural mixtures with known source directions.
+This project investigates whether binaural spatial cues can improve speech separation in controlled two-source audio scenes.
 
-ILD and IPD cues will be extracted from the binaural signals and used to construct soft time-frequency masks. The project will compare conventional spectral masking with ILD-based, IPD-based, and combined spatial masking under different source angular separations.
+Clean target speech and an interfering speech signal are spatialised using measured HRIRs to generate binaural mixtures with known source directions. Interaural Level Difference (ILD) and Interaural Phase Difference (IPD) cues are extracted from the binaural mixture and used to construct soft time-frequency masks.
 
-HRIR-based spatial re-mixing will be used as a final listening demonstration after the main speech-separation experiments.
+The main experiment compares conventional spectral masking with ILD-based, IPD-based, and combined spatial masking under different angular separations between the target and interfering source.
+
+HRIR-based spatial re-mixing is included as a secondary listening demonstration.
 
 ## Main Research Question
 
 How much do binaural ILD and IPD cues improve soft-mask speech separation beyond conventional spectral masking, and how does the benefit depend on the angular separation between the target and interfering source?
 
-## Proposed Methods
+## Methods
 
+The implemented system includes:
+
+- Controlled binaural mixture generation using measured HRIRs
 - Short-Time Fourier Transform (STFT)
-- Controlled binaural mixtures using measured HRIRs
-- SADIE II / SOFA spatial audio data
-- ILD-based spatial masking
-- IPD-based spatial masking
+- ILD cue extraction
+- IPD cue extraction
+- ILD-based soft masking
+- IPD-based soft masking
 - Combined ILD + IPD masking
-- Spectral/Wiener masking baseline
-- Ablation experiments across different source angular separations
-- SNR and SI-SDR/SDR evaluation
+- Wiener spectral masking baseline
+- Spectral + spatial masking
+- Angular-separation ablation experiments
+- SNR and SI-SDR evaluation
 - ILD/IPD spatial-cue evaluation
-- HRIR-based spatial re-mixing and listening demonstration
+- HRIR-based spatial re-mixing
 
-## Platform
+## Experimental Setup
 
-MATLAB R2025a
+The target source is fixed at 0° azimuth.
 
-Existing MATLAB SOFA/HRTF processing tools will be used for reading and processing measured HRIR data.
+The interfering source is tested at different angular separations:
 
-## Expected Outcome
+- 15°
+- 30°
+- 60°
+- 90°
 
-The project is expected to produce a MATLAB prototype for generating controlled binaural mixtures, extracting ILD and IPD cues, applying soft time-frequency masks, and reconstructing the target speech. The main outcome will be a comparison of spectral, ILD-based, IPD-based, and combined masking methods under different source angular separations.
+The default input SNR is 0 dB.
 
-## Project Status
+Three target/interferer speech pairs are used in the main experiment.
 
-Current work focuses on literature review, HRIR/SOFA dataset preparation, and implementation of the controlled binaural separation experiment.
+## Data and Resources
 
-## Proposal
+- **Speech data:** LibriSpeech `dev-clean`
+- **HRIR data:** SADIE II H10, SOFA format
 
-The full revised project proposal is available in [`proposal.md`](proposal.md).
+Source and licence information are included in the corresponding folders under `matlab_project/data/`.
