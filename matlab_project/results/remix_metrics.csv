@@ -1,0 +1,4 @@
+Component,Reference,ReconstructionSNRdB,SISDRdB,ILD_RMSE_dB,IPD_RMSE_rad,CueEnergyCoverage
+Target,Clean binaural mono fold-down + same new HRIR,6.0251466573475,4.68571247472652,0.331965377427435,0.0447033839608443,0.999626914348676
+Residual_background,Clean binaural mono fold-down + same new HRIR,4.29289413598527,1.91578162207741,0.2138163228287,0.0246847927883959,1
+Combined,Clean binaural mono fold-down + same new HRIR,10.9838537628419,10.7162325299692,2.69785396906608,0.518931922928708,1
