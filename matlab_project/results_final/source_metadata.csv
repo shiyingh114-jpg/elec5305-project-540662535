@@ -1,0 +1,4 @@
+TargetFile,InterfererFile,TargetOriginalFs,InterfererOriginalFs,TargetOriginalSeconds,InterfererOriginalSeconds,RenderFs,TargetUsedSeconds,InterfererUsedSeconds,CalibrationSeconds,Pair
+/Users/mac/Desktop/5305 final project/final_project/matlab_project/data/speech/target1.flac,/Users/mac/Desktop/5305 final project/final_project/matlab_project/data/speech/interferer1.flac,16000,16000,5.855,10.43,48000,5.855,6.455,0.6,1
+/Users/mac/Desktop/5305 final project/final_project/matlab_project/data/speech/target2.flac,/Users/mac/Desktop/5305 final project/final_project/matlab_project/data/speech/interferer2.flac,16000,16000,3.305,2.86,48000,2.26,2.86,0.6,2
+/Users/mac/Desktop/5305 final project/final_project/matlab_project/data/speech/target3.flac,/Users/mac/Desktop/5305 final project/final_project/matlab_project/data/speech/interferer3.flac,16000,16000,9.09,11.02,48000,8,8.6,0.6,3
