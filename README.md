@@ -35,21 +35,18 @@ The implemented system includes:
 - SNR and SI-SDR evaluation
 - ILD/IPD spatial-cue evaluation
 - HRIR-based spatial re-mixing
+- Modified spectral–spatial fusion mapping the Wiener factor to 0.5–1
 
 ## Experimental Setup
 
-The target source is fixed at 0° azimuth.
+The target source is fixed at 0° azimuth and 0° elevation.
 
-The interfering source is tested at different angular separations:
+Requested angular separations are 15°, 30°, 60°, and 90°.
+The nearest measured HRIR directions give actual separations of
+13.3°, 30°, 60°, and 90°.
 
-- 15°
-- 30°
-- 60°
-- 90°
-
-The default input SNR is 0 dB.
-
-Three target/interferer speech pairs are used in the main experiment.
+Three target/interferer speech pairs are evaluated at input SNRs
+of −5, 0, and +5 dB, producing 36 controlled test scenes.
 
 ## Data and Resources
 
